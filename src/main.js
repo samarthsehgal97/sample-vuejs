@@ -6,6 +6,7 @@ import Default from '@/layouts/Default.vue';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import '@/styles/custom.scss';
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
@@ -27,7 +28,7 @@ const auth = new Auth({
     post_logout_uri: process.env.VUE_APP_Post_Logout_Uri,
     client_id: process.env.VUE_APP_Client_Id,
     scope: 'openid profile',
-    post_login_navigate: '/'
+    post_login_navigate: '/dashboard'
 });
 
 Vue.prototype.$auth = auth;

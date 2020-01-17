@@ -5,9 +5,9 @@
 
 <script>
 export default {
-  name: 'login',
+  name: 'logout',
   mounted() {
-      this.$auth.logoutWithRedirect();
+      this.$auth.logout();
   }
 }
 </script>

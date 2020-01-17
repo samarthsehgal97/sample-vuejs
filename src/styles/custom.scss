@@ -1,0 +1,18 @@
+$body-bg: #f7fbfa;
+$body-color: rgba(0, 0, 0, .65);
+$theme-colors: ( "primary": #38d39f, "danger": #ff7161, "#38d39f": #38d39f);
+// Include Bootstrap and BootstrapVue SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
