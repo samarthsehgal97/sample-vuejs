@@ -4,8 +4,7 @@
       <template v-slot:header>{{first_name}}</template>
       <template v-slot:lead>You are now logged in.</template>
       <hr class="my-4" />
-      <p>Please update your profile details or password.</p>
-
+      <p>You can update your profile details or password.</p>
       <b-button variant="primary" href="#" class="mr-1">
         <b-icon icon="gear-wide-connected"></b-icon> Update profile
       </b-button>

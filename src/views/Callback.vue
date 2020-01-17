@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <p>Loading</p>
+  <div class="mx-auto">
+      <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
   </div>
 </template>
 
