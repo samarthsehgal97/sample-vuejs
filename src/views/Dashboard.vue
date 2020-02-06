@@ -23,10 +23,10 @@ export default {
         : "";
     },
     get_user_password_url() {
-      return this.$auth.get_user_password_url;
+      return this.$auth.get_user_password_url();
     },
     get_user_settings_url() {
-      return this.$auth.get_user_settings_url;
+      return this.$auth.get_user_settings_url();
     }
   }
 };
