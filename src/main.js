@@ -33,6 +33,10 @@ const auth = new Auth({
 
 Vue.prototype.$auth = auth;
 
+Vue.prototype.$role = function(required_scopes) {
+    return auth.session.hasAccessScope(required_scopes);
+};
+
 new Vue({
     router,
     el: '#app',
