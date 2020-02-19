@@ -16,14 +16,14 @@
               <b-icon icon="box-arrow-right"></b-icon> Login
             </b-nav-item>
           </b-navbar-nav>
-          <b-navbar-nav class="ml-auto" v-if="is_authenticated">
+          <b-navbar-nav v-if="is_authenticated">
             <b-nav-item-dropdown right>
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
                 <img :src="avatar" style="width:1.5em;" />
               </template>
-              <b-dropdown-item href="#">Update profile</b-dropdown-item>
-              <b-dropdown-item href="#">Change password</b-dropdown-item>
+              <b-dropdown-item :href="get_user_settings_url">Update profile</b-dropdown-item>
+              <b-dropdown-item :href="get_user_password_url">Change password</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
@@ -38,6 +38,12 @@ export default {
     },
     avatar() {
       return this.$auth.session.id_payload.picture;
+    },
+    get_user_password_url() {
+      return this.$auth.get_user_password_url();
+    },
+    get_user_settings_url() {
+      return this.$auth.get_user_settings_url();
     }
   }
 };
