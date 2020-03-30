@@ -1,7 +1,7 @@
 <template>
       <b-navbar toggleable="lg" class="mb-5">
         <b-navbar-brand href="/">
-          <img src="https://axioms.io/demo/oats.svg" style="width:2em;" alt="Oats" />
+          <img src="https://static.axioms.io/demo/oats.svg" style="width:2em;" alt="Oats" />
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
