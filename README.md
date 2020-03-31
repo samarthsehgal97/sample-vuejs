@@ -31,7 +31,11 @@ VUE_APP_Client_Id=<Your_Client_ID>
 VUE_APP_Axioms_Domain=<Your_Slug>.axioms.io
 VUE_APP_Redirect_Uri=https://<Your-App-Domain>/callback
 VUE_APP_Post_Logout_Uri=https://<Your-App-Domain>/login
+VUE_APP_Response_Type=code
+VUE_APP_Scope=openid profile
 ```
+
+We recommend to use `code` response type (Authorization code flow with PKCE). For more supported response type options please review  `web-js` documentation.
 
 ### Compile and hot-reload for local development
 ```

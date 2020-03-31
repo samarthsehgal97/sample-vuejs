@@ -23,11 +23,11 @@ Vue.component("default-layout", Default);
 // Auth
 const auth = new Auth({
     axioms_domain: process.env.VUE_APP_Axioms_Domain,
-    response_type: 'code',
+    response_type: process.env.VUE_APP_Response_Type,
     redirect_uri: process.env.VUE_APP_Redirect_Uri,
     post_logout_uri: process.env.VUE_APP_Post_Logout_Uri,
     client_id: process.env.VUE_APP_Client_Id,
-    scope: 'openid profile',
+    scope: process.env.VUE_APP_Scope,
     post_login_navigate: '/dashboard'
 });
 
