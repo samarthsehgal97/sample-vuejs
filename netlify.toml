@@ -1,0 +1,8 @@
+[template.environment]
+  VUE_APP_Client_Id="Your-Client-ID"
+  VUE_APP_Axioms_Domain="Your-Axioms-Domain"
+  VUE_APP_Redirect_Uri="Your-Redirect-URI"
+  VUE_APP_Post_Logout_Uri="Your-Post-Logout-URI"
+  VUE_APP_Response_Type="Your-Response-Type"
+  VUE_APP_Scope="Your-Scope"
+  VUE_APP_Post_Login_Navigate="Your-Post-Login-Navigate"
