@@ -45,7 +45,7 @@ VUE_APP_Client_Id=MvnGPGwPJ7DNs0fQLpAr4dhi2PbfuQX1
 VUE_APP_Axioms_Domain=auth.test-unlimited.com
 VUE_APP_Redirect_Uri=http://localhost:8080/callback
 VUE_APP_Post_Logout_Uri=http://localhost:8080/login
-VUE_APP_Response_Type=id_token token
+VUE_APP_Response_Type=code
 VUE_APP_Scope=openid profile email orgs
 VUE_APP_Post_Login_Navigate=/dashboard
 ```
@@ -77,7 +77,7 @@ Simply click following button and provide your `.env` variables,
 
 
 ### Build Settings
-Build command: `yarn build` or `npm build`
+Build command: `npm build`
 
 Publish directory: `build/`
 
